@@ -9,14 +9,6 @@
 import Foundation;
 import SpriteKit;
 
-private extension CGPoint {
-    // Get the length (a.k.a. magnitude) of the vector
-    var length: CGFloat { return sqrt(self.x * self.x + self.y * self.y) }
-    
-    // Normalize the vector (preserve its direction, but change its magnitude to 1)
-    var normalized: CGPoint { return CGPoint(x: self.x / self.length, y: self.y / self.length) }
-}
-
 class Bullet : SKNode, Collidable
 {
     var bullet : SKSpriteNode? = nil;

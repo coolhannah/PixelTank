@@ -185,9 +185,17 @@ final class Player : SKNode, Collidable
     func handleCollisionWithObject(otherBody:SKPhysicsBody)
     {
         // if the player has hit the edge or an enemy
-        if (((otherBody.categoryBitMask | GameScene.CollisionInfo.AREA_MASK) != 0) ||
+        if (/*((otherBody.categoryBitMask | GameScene.CollisionInfo.AREA_MASK) != 0) ||*/
             ((otherBody.categoryBitMask | GameScene.CollisionInfo.ENEMY_MASK) != 0))
         {
+            //var enemy : Enemy = otherBody.node as Enemy;
+            
+            // apply damage and HP
+            
+            // check if player is dead
+            
+            
+            // call the check alive of enemy
             
         }
     }
